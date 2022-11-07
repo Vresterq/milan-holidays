@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/*Container*/
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.wrapper {
+    max-width: 1366px;
+    background-image: url("../img/wrapper-background.png");
+    background-position: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container {
+    margin: 0 162px 0 162px;
+}
+
+/*NAV*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 0 17px 0;
+}
+
+.nav-logo-link {
+    display: flex;
+}
+
+/*nav-logo-img*/
+.nav-logo-img {
+    margin: 0 8px 0 0;
+}
+
+.nav-logo-img-orange {
+    display: none;
+}
+
+.nav-logo-link:hover .nav-logo-img-main {
+    display: none;
+}
+
+.nav-logo-link:hover .nav-logo-img-orange {
+    display: inline;
+}
+
+/*nav-logo-title*/
+.nav-logo-title {
+    font-size: 29px;
+    line-height: 29px;
+    font-weight: 700;
+}
+
+.nav-logo-link:hover .nav-logo-title {
+    color: #F26522;
+}
+
+.nav-logo-title-small {
+    font-size: 18px;
+}
+
+/*nav-contacts*/
+.nav-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.nav-email {
+    margin-bottom: 18px;
+}
+
+.nav-email:hover {
+    color: #F26522;
+    transition-duration: 0.5s;
+}
+
+.nav-phone:hover {
+    color: #F26522;
+    transition-duration: 0.5s;
+}
+
+/*Main*/
+/*cards-items*/
+.cards-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cards-item:hover > .card-item-pop-up {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-item-image {
+    background: linear-gradient(to right, black, white);
+}
+
+.card-item-pop-up {
+    background-color: #F26522;
+    padding: 8px 14px 12px 16px;
+    position: absolute;
+    bottom: 26%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.8s linear;
+}
+
+.card-item-price-start {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 8px;
+}
+
+.card-item-pop-up-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item-details::after {
+    content: ">";
+    margin-left: 16px;
+}
+
+.card-item-name {
+    margin: 20px auto 37px auto;
+}
+
+.cards-item:hover > .card-item-name {
+    color: #F26522;
+    transition-duration: 0.5s;
+}
